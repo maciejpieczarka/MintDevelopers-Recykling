@@ -1,0 +1,233 @@
+:root {
+  --main-green: #23AE2E;
+  --dark-theme-one: rgb(39, 42, 54);
+  --dark-theme-two: rgb(34, 36, 47);
+  --main-font: 'Roboto', sans-serif;
+  --main-font-color: #fff;
+  --thin: 300;
+  --normal: 400;
+  --semi-bold: 500;
+  --bold: 700;
+}
+
+*, *::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.container {
+  width: 153rem;
+  height: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  font-weight: var(--bold);
+  cursor: pointer;
+}
+
+.green-txt {
+  color: var(--main-green);
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 10rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header > .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .hamburger-btn {
+  display: none;
+}
+
+header .logo-img {
+  height: auto;
+  width: 10rem;
+}
+
+nav .nav-list .nav-item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 1.6rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+nav .nav-list .nav-item:hover {
+  color: var(--main-green);
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-bg-img.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg-img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero > .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-section {
+  max-width: 75rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-section .text-area > .title {
+  font-size: 3.4rem;
+  font-weight: var(--bold);
+}
+
+.search-section .text-area > .subtitle {
+  margin: .4rem 0;
+  font-size: 1.7rem;
+  font-weight: var(--thin);
+  color: #D1D1D1;
+}
+
+.search-section .search-engine {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6rem;
+  width: 50rem;
+  border: 3px solid var(--main-font-color);
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.search-section .search-engine .search-icon {
+  font-size: 1.8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 1.5rem;
+}
+
+.search-section .search-engine .search-input {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search-section .search-engine .search-input > input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  color: var(--main-font-color);
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.search-section .search-engine .search-input > input::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+
+.search-section .search-engine .search-input > input:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+.search-section .search-engine .search-input > input::-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+.search-section .search-engine .search-input > input::placeholder {
+  color: #bbbbbb;
+}
+
+.search-section .help-area {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.search-section .help-area span {
+  font-weight: var(--bold);
+}
+
+.search-section .cta-btn {
+  width: 18rem;
+  height: 4.5rem;
+  margin: 4.5rem auto;
+  background-color: var(--main-green);
+  color: var(--main-font-color);
+  font-size: 1.6rem;
+  opacity: 95%;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.search-section .cta-btn:hover {
+  opacity: 100%;
+}
+/*# sourceMappingURL=main.css.map */

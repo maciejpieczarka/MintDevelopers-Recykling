@@ -1,0 +1,40 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+
+    >.container {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .logo-img {
+        height: auto;
+        width: 10rem;
+    }
+}
+
+nav {
+
+    .nav-list {
+
+        .nav-item {
+            display: inline-block;
+            padding: 0 2rem;
+            font-size: 1.6rem;
+            transition: all 300ms ease;
+
+            &:hover {
+                color: var(--main-green);
+            }
+        }
+    }
+}
