@@ -19,9 +19,9 @@
             
             <nav>
                 <ul class="nav-list flex">
-                    <li class="nav-item"><a href="">Gdzie wyrzucić?</a></li>
-                    <li class="nav-item"><a href="">Quiz recyklingowy</a></li>
-                    <li class="nav-item"><a href="">Zasada 3R</a></li>
+                    <li class="nav-item"><a href="#home">Gdzie wyrzucić?</a></li>
+                    <li class="nav-item"><a href="#quiz">Quiz recyklingowy</a></li>
+                    <li class="nav-item"><a href="#r3-rule">Zasada 3R</a></li>
                 </ul>
             </nav>
 
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Main section with searchBar -->
-    <section class="hero flex">
+    <section id="home" class="hero">
         <div class="container flex">
             <div class="search-section flex">
                 <div class="text-area">
@@ -70,19 +70,51 @@
     </section>
 
     <!-- Section including quiz game -->
-    <!-- <section class="quiz">
-        <div class="container">
-            
-        </div>
-    </section> -->
-
-    <!-- 3R rule section -->
-    <!-- <section class="3r-rule">
-        <div class="container">
+    <section id="quiz" class="quiz">
+        <div class="container flex">
             
         </div>
     </section>
 
-    <footer></footer> -->
+    <!-- 3R rule section -->
+    <section id="r3-rule" class="r3-rule">
+        <div class="section-title">Zasada 3R</div> 
+        <div class="container flex">
+            <div class="explanation-area">
+                <div class="r3-title">Czym ona jest?</div>
+                <div class="r3-description">Zasada Reduce, Reuse, Recycle promuje zdrowy dla środowiska styl życia, konsumpcji dóbr i
+                    traktowania odpadów. Przestrzeganie tej zasady wiąże się z regułami takimi jak:</div>
+                <div class="r3-list">
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="list-text">Ogranicz konsumpcje niepotrzebnych produktów.</div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="list-text">Staraj się powtórnie wykorzystywać produkty powszechnie uznane za jednorazowe.</div>
+                    </div>
+
+                    <div class="list-item">
+                        <div class="list-icon">
+                            <i class="fas fa-recycle"></i>
+                        </div>
+                        <div class="list-text">Oddaj do odzysku produkty, których się nie da wykorzystać ponownie.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy-text">
+                <div class="line">REUSE</div>
+                <div class="line">REDUCE</div>
+                <div class="line">RECYCLE</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <footer></footer> -->
 </body>
 </html>

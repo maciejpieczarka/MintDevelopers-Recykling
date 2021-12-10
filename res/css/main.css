@@ -17,6 +17,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-size: 10px;
 }
 
@@ -36,9 +37,15 @@ ul, ol {
   list-style: none;
 }
 
+section {
+  width: 100%;
+  height: 100vh;
+}
+
 .container {
   width: 153rem;
   height: 100%;
+  margin: auto;
 }
 
 .flex {
@@ -57,6 +64,21 @@ ul, ol {
 
 .green-txt {
   color: var(--main-green);
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-transform: capitalize;
+  font-weight: var(--bold);
+  width: 100%;
+  text-align: center;
+  height: 10rem;
+  line-height: 10rem;
+  font-size: 3.2rem;
+  -webkit-box-shadow: 0px 11px 12px #20232C;
+          box-shadow: 0px 11px 12px #20232C;
 }
 
 header {
@@ -104,18 +126,10 @@ nav .nav-list .nav-item:hover {
 }
 
 .hero {
-  width: 100%;
-  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/hero-bg-img.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .hero > .container {
@@ -269,5 +283,93 @@ nav .nav-list .nav-item:hover {
   font-size: 1.8rem;
   color: var(--main-font-color);
   font-weight: var(--semi-bold);
+}
+
+.quiz {
+  background-color: var(--dark-theme-one);
+}
+
+.r3-rule {
+  background-color: var(--dark-theme-two);
+  position: relative;
+}
+
+.r3-rule > .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.r3-rule .explanation-area,
+.r3-rule .dummy-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.r3-rule .dummy-text {
+  width: 55%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.r3-rule .dummy-text > .line {
+  color: var(--main-green);
+  font-weight: var(--bold);
+  font-size: 15rem;
+}
+
+.r3-rule .explanation-area {
+  width: 45%;
+}
+
+.r3-rule .explanation-area > .r3-title {
+  font-size: 5.4rem;
+  font-weight: var(--bold);
+}
+
+.r3-rule .explanation-area > .r3-description {
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: var(--thin);
+  text-align: left;
+  width: 30rem;
+  margin: 1rem 0;
+}
+
+.r3-rule .explanation-area > .r3-list .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3rem;
+  margin: 1rem 0;
+  width: 80%;
+}
+
+.r3-rule .explanation-area > .r3-list .list-item .list-icon {
+  font-size: 2.4rem;
+  margin-right: .8rem;
+  color: var(--main-green);
+}
+
+.r3-rule .explanation-area > .r3-list .list-item .list-text {
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=main.css.map */
