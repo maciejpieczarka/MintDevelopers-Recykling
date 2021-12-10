@@ -1,5 +1,5 @@
 :root {
-  --main-green: #23AE2E;
+  --main-green: #8CCF9A;
   --dark-theme-one: rgb(39, 42, 54);
   --dark-theme-two: rgb(34, 36, 47);
   --main-font: 'Roboto', sans-serif;
@@ -119,12 +119,16 @@ nav .nav-list .nav-item:hover {
 }
 
 .hero > .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .search-section {
@@ -218,7 +222,7 @@ nav .nav-list .nav-item:hover {
 .search-section .cta-btn {
   width: 18rem;
   height: 4.5rem;
-  margin: 4.5rem auto;
+  margin: 4.5rem auto 0 auto;
   background-color: var(--main-green);
   color: var(--main-font-color);
   font-size: 1.6rem;
@@ -229,5 +233,41 @@ nav .nav-list .nav-item:hover {
 
 .search-section .cta-btn:hover {
   opacity: 100%;
+}
+
+.result-section {
+  border: 3px solid var(--main-green);
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.result-section > i {
+  font-size: 6rem;
+  margin-right: 2rem;
+}
+
+.result-section .text-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.result-section .text-container .product-title {
+  font-size: 2.4rem;
+  color: var(--main-green);
+  text-transform: uppercase;
+  font-weight: var(--bold);
+}
+
+.result-section .text-container .product-subtitle {
+  font-size: 1.8rem;
+  color: var(--main-font-color);
+  font-weight: var(--semi-bold);
 }
 /*# sourceMappingURL=main.css.map */
