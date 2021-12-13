@@ -90,9 +90,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 header > .container {
@@ -110,7 +107,7 @@ header .hamburger-btn {
 
 header .logo-img {
   height: auto;
-  width: 10rem;
+  width: 6rem;
 }
 
 nav .nav-list .nav-item {
