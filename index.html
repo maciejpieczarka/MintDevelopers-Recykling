@@ -7,10 +7,13 @@
     <title>MiniHackathon II | MintDevelopers</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./res/css/main.css">
+    <link rel="stylesheet" href="./res/css/quiz.css">
     <script src="./res/js/search.js" defer></script>
+    <script src="./res/js/quiz.js" defer type="module"></script>
 </head>
 <body>
     <header class="flex">
@@ -71,9 +74,55 @@
 
     <!-- Section including quiz game -->
     <section id="quiz" class="quiz">
-        <div class="container flex">
+
+        <h2 class="quiz-h2">Quiz Recyklingowy</h2>
+        <p class="quiz-p">Czy potrafisz odpowiedzieć na 8 pytań związanych z recyklingiem? Prezkonaj się sam!</p>
+        
+        <button class="start-quiz-btn">Rozpocznij</button>
+
+        <!-- Quiz Container -->
+        <div class="quiz-cont off">
+
+            <div class="quiz-results">
+                <h5>WYNIK</h5>
+                <div class="score-cont"><span class="score"></span>/8</div>
+            </div>
             
+            <div class="quiz-img">
+                <img src="" alt="">
+            </div>
+            
+            <div class="quiz-nav">
+                <div class="quiz-nav-upper">
+                    <div class="points-cont">
+                        Punkty: <span class="points">02</span>
+                    </div>
+                    <div class="questions-length-cont">
+                        Pytanie <span class="currQuestion"> 123 </span> z <span class="questionsLength"> 10</span>
+                    </div>
+                    <div class="time-left-cont">
+                        <span class="time-left">60</span> sek
+                    </div>
+                </div>
+                <div class="quiz-nav-bottom">
+                    <div class="quiz-bar-cont">
+                        <div class="quiz-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question">Czy szkło można poddać recyklingowi nieskończoną ilość razy?</div>
+
+            <div class="answers">
+                <div class="answer1 answer">test</div>
+                <div class="answer2 answer">test</div>
+                <div class="answer3 answer">test</div>
+                <div class="answer4 answer">test</div>
+            </div>
+            <div class="answer-detail"></div>
+
         </div>
+        
     </section>
 
     <!-- 3R rule section -->
