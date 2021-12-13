@@ -153,7 +153,6 @@ function nextQuestion(){
 
         const childs = quiz.childNodes;
         for(let child of childs){
-            console.log(child)
     
             if(child.nodeName == "#text")
                 continue
@@ -224,7 +223,6 @@ function nextQuestion(){
                 
                 // Set answerPassed true to prevent clicking multiple times
                 answerPassed = true
-                console.log("interva:", interval)
                 clearInterval(interval)
                 interval = null
     
